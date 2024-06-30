@@ -9,7 +9,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from keras.models import Sequential
 from keras.layers import LSTM, Dense, Reshape
 
-df = pd.read_csv('/content/output_handled_data.csv', index_col='Date and Time')
+df = pd.read_csv('/data.csv', index_col='Date and Time')
 
 data = df.filter(['annualised consumption GUESS, TWh'])
 
